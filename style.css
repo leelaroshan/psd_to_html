@@ -1,32 +1,136 @@
 
+/* header Flex  */
+.header {
+    display: flex;
+
+    flex-wrap: wrap;
+    align-items: baseline;
+     justify-content: space-evenly;  
+
+     
+    background-image: url("images/photoshop/design-assets/bgk-header.png");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+  }
+  
+
+
+  /* flex for image and tajam */
+.header-img{
+     
+    display: flex;
+    flex-direction: row;
+ justify-content:space-between;
+ border: 1px solid red; 
+
+
+}
+
+ .h-img{
+width: 30px;
+height: 50px;
+     /* margin: auto; */
+
+ }
+ h4{
+ font-size: large;
+ color:lightseagreen;
+ }
 
 
 
-* {
-    margin: 0;
-    }
-    nav {
-    color: red;
-    }
-    #hero-section {
-    color: blue;
-    }
-    #our_stroy-section {
-    color: green;
-    }
-    #watch-section {
-    color: darkred
-    }
-    #expertise-section {
-    color: yellow;
-    }
-    #team-section {
-    color: lightsalmon;
-    }
-    foorer {
-    color: blueviolet;
-    }
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    font-size: small;
+    padding: 0 20px;
+    color: white;
+   
+    margin-top: 0px;
+
+}
+
+
+
+
+
+
+
+/* .nav-link{
+   
+}
+ .nav-link ul {
+    list-style-type: none;
+}
+ 
+
+.nav-link ul  li a{
+    text-decoration: none;
+}
+
+/* flex for  content*/
+ /* .header-content{
+
+ border: 1px solid green;  
+ } */ 
+
+  .heading{
+    font-style: normal;
+    color:beige;
+
+
+  }
+  .caption {
+  font-style: normal;
+  color:beige;
+  
+  }
+
+  /* .caption {
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+     font-style: italic; 
+    position: relative;
+    color: biege(152, 54, 54);
+
+    line-height: 14px;
+
+    margin-left: 10px;
+    padding: 20px;
+    top: 20%;
+    width: 60%;
     
-    
+  } */
 
+
+  .btn{
+    padding: 5px;
+    border: 1px solid aqua;
+    
+    color: lightseagreen;
+    background-color: no  currentColor;
+   
+
+  }
+
+
+
+    
+.header-content {
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: baseline;
+     justify-content: center; 
+
+     
+  }
+
+
+  
 
