@@ -1,44 +1,68 @@
 
+
+
+/*Don't give your website a set width and length from the get go as it will look different on other screens*/
+
 /* header Flex  */
 .header {
     display: flex;
-
     flex-wrap: wrap;
-    align-items: baseline;
-     justify-content: space-evenly;  
-
-     
+    align-items:flex-start;
+    justify-content: space-around; 
+    /* align-content: center;  */
     background-image: url("images/photoshop/design-assets/bgk-header.png");
     background-size: cover;
     background-position: center;
+    /* padding-top: 200px;
+    padding-bottom: 200px; */
+
     height: 650px;
+
+
   }
   
 
 
   /* flex for image and tajam */
 .header-img{
-     
-    display: flex;
-    flex-direction: row;
- justify-content:space-between;
- border: 1px solid red; 
-
-
+  margin-top: 0px;
+  /* padding-top: 10px; */
+  margin-left: 230px;
+display: flex;
+flex-direction: row;
+align-items: center;
+ justify-content:space-around;
+ align-content: flex-end;
+ padding: 3px 30px;
+ /* border: 1px solid red;  */
+ 
 }
 
+
+
  .h-img{
-width: 30px;
+width: 45px;
 height: 50px;
      /* margin: auto; */
 
  }
- h4{
- font-size: large;
+ .tajam { 
+   margin: 10px;
+ font-size: 28px;
  color:lightseagreen;
  }
 
+/* flex for NAVIGATION */
 
+ .navigation{
+ 
+ display:flex;
+ flex-direction: row;
+ align-items:flex-start ;
+  align-content: flex-start; 
+ justify-content: center;
+
+}
 
 .nav-links {
     list-style: none;
@@ -46,11 +70,10 @@ height: 50px;
 
 .nav-links li {
     display: inline-block;
-    font-size: small;
-    padding: 0 20px;
+    font-size: 13px;
+    padding: 0 15px;
     color: white;
-   
-    margin-top: 1px;
+    margin: 0px;
 
 }
 
@@ -59,57 +82,121 @@ height: 50px;
 }
 
 
+ /* FLEX for CONTENT */
 
+ .header-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+   justify-content: center; 
 
-
-
-
-/* .nav-link{
    
 }
- .nav-link ul {
-    list-style-type: none;
-}
- 
 
-.nav-link ul  li a{
-    text-decoration: none;
-}
-
-/* flex for  content*/
- /* .header-content{
-
- border: 1px solid green;  
- } */ 
 
   .heading{
-    font-style: normal;
+    font-family: 'Playfair Display';
     color:beige;
 
-
   }
+
+  .hr-bar { 
+    size : 3;
+    width: 3%;
+    /* color: lightseagreen; */
+    
+    }
+    
+
+
+
+
+
   .caption {
-  font-style: normal;
+    margin-left: 330px ;
+    margin-right: 350px;
+   line-height: 26px;
+    text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:beige;
   
   }
 
-  /* .caption {
-    display: block;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 24px;
-     font-style: italic; 
-    position: relative;
-    color: biege(152, 54, 54);
 
-    line-height: 14px;
-
-    margin-left: 10px;
-    padding: 20px;
-    top: 20%;
-    width: 60%;
+  .btn{
+    /* margin-top:50px; */
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid aqua;
     
-  } */
+    color: lightseagreen;
+    background-color: rgba(255,255,255,0);
+   
+
+  }
+
+
+
+    
+
+
+
+  
+/* SECOND CONTAINER  */
+
+
+.our-story-container {
+ /* height: 400px; */
+ 
+ display: flex;
+ flex-direction: row;
+ justify-content:center;
+ align-content: center;
+ align-items: flex-start;
+ border: 2px solid green;
+ padding-top:50px ;
+padding-bottom: 50px;
+}
+
+
+.our-story-container-img{
+  margin-left: 300px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 100px;
+  /* border: 2px dotted red; */
+
+}
+
+
+.our-story-container-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+ 
+  /* border: 4px dotted purple; */
+
+}
+
+
+.our-story-container-para {
+
+  margin-left: 0px ;
+  margin-right: 190px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 25px;
+  padding-bottom: 20px;
+ 
+  /* border: 4px dotted black; */
+
+} 
+
+
 
 
   .btn{
@@ -124,17 +211,199 @@ height: 50px;
 
 
 
-    
-.header-content {
-    display: flex;
-    
-    flex-wrap: wrap;
-    align-items: baseline;
-     justify-content: center; 
 
-     
+
+
+
+/* THIRD CONTAINER  */
+
+
+  .watch-our-story-container {
+    display: flex;
+flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+    background-image: url("images/photoshop/design-assets/bgk-middle.png");
+    background-size: cover;
+    background-position: center;
+    height: 540px;
   }
 
+.watch-our-story-container-content{
+  color: white;
+}
 
+
+
+
+/* EXPERTISE CONTAINER  */
+
+.expertise-container {
+  display: flex;
+flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;  
+  background-image: url("images/photoshop/design-assets/svg/Billabong.svg");
+  background-size: cover;
+  background-position: center;
+ 
+ 
   
+  
+}
+
+
+
+
+/* TEAM CONTAINER  */
+.team-container {
+  display: flex;
+flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;  
+  background-image: url("images/photoshop/design-assets/bgk-header.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  
+ 
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+
+  /* height: 693;*/
+}
+
+
+.team-members{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: center; */
+
+}
+
+.team-bar { 
+  size : 5;
+  width: 6%;
+  margin:0 auto;
+  /* color: lightseagreen; */
+ 
+  }
+  .team-container h3 {
+    margin-top:0px;
+    color: white;
+  }
+  
+  
+  .team-container p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+  }
+  
+
+.box1 , .box2 ,.box3,  .box4{
+  height: 300px;
+  width: 220px;
+  padding: 0px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+
+  border: 1px solid gray; 
+}
+
+.box1 .box1-img, .box2-img, .box3-img, .box4-img{
+  height: 70%;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+/* CLIENT CONTAINER  */
+.client-container {
+  display: flex;
+flex-direction: row;
+  
+  align-items: center;
+  justify-content: center;  
+  background-image: url("images/photoshop/design-assets/svg/Billabong.svg");
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 250px;
+  padding-bottom: 250px;
+  
+  /* height: 660px; */
+}
+
+.client-container-part1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 4px dotted purple;
+
+
+}
+.client-container-part2{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 2px solid black;
+
+
+}
+
+
+.btn{
+  padding: 5px;
+  border: 1px solid aqua;
+  
+  color: lightseagreen;
+  background-color: no  currentColor;
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FooTer CONTAINER  */
+.footer-container {
+  display: flex;
+
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;  
+  background-image: url("images/photoshop/design-assets/bgk-footer.png");
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+}
+
 
