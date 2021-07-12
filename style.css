@@ -424,8 +424,8 @@ flex-direction: row;
 }
 
 .zara{
-  margin-top: 0em;
-  margin-bottom: .5em;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 .barneys{
@@ -444,28 +444,28 @@ flex-direction: row;
 
 
 .mango{
-  margin-top: 0.5em;
+  margin-top: 3.5em;
   margin-bottom:  0.5em;
 }
 
 .gucci{
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   margin-bottom: 0.5em;
 }
 
 
 .nike{
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   margin-bottom: 1.5em;
 }
 .puma{
   margin-top: 2.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 .billabong{
-  margin-top: 2.5em;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
+ margin-bottom:0em;
 }
 
 
@@ -664,7 +664,10 @@ display: flex;
 justify-content: space-between;
 margin: 1em 10em 0 9em;
 width: 80%;
+color: white;
 }
+
+
 
 .upper-part{
   display: flex;
